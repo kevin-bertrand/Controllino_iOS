@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		061AE54425E6485200A67EBD /* controllinoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AE54325E6485200A67EBD /* controllinoApp.swift */; };
-		061AE54625E6485200A67EBD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AE54525E6485200A67EBD /* ContentView.swift */; };
 		061AE54825E6485700A67EBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 061AE54725E6485700A67EBD /* Assets.xcassets */; };
 		061AE54B25E6485700A67EBD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 061AE54A25E6485700A67EBD /* Preview Assets.xcassets */; };
 		061AE55625E6485700A67EBD /* controllinoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AE55525E6485700A67EBD /* controllinoTests.swift */; };
 		061AE56125E6485700A67EBD /* controllinoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AE56025E6485700A67EBD /* controllinoUITests.swift */; };
+		061AE57925E64A7900A67EBD /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061AE57825E64A7900A67EBD /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +35,6 @@
 /* Begin PBXFileReference section */
 		061AE54025E6485200A67EBD /* controllino.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = controllino.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		061AE54325E6485200A67EBD /* controllinoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = controllinoApp.swift; sourceTree = "<group>"; };
-		061AE54525E6485200A67EBD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		061AE54725E6485700A67EBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		061AE54A25E6485700A67EBD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		061AE54C25E6485700A67EBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,6 +44,7 @@
 		061AE55C25E6485700A67EBD /* controllinoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = controllinoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		061AE56025E6485700A67EBD /* controllinoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = controllinoUITests.swift; sourceTree = "<group>"; };
 		061AE56225E6485700A67EBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		061AE57825E64A7900A67EBD /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,11 +95,10 @@
 		061AE54225E6485200A67EBD /* controllino */ = {
 			isa = PBXGroup;
 			children = (
-				061AE54325E6485200A67EBD /* controllinoApp.swift */,
-				061AE54525E6485200A67EBD /* ContentView.swift */,
-				061AE54725E6485700A67EBD /* Assets.xcassets */,
-				061AE54C25E6485700A67EBD /* Info.plist */,
-				061AE54925E6485700A67EBD /* Preview Content */,
+				061AE57425E6497F00A67EBD /* Others */,
+				061AE57325E6497800A67EBD /* Controllers */,
+				061AE57225E6497400A67EBD /* Views */,
+				061AE57125E6496D00A67EBD /* Models */,
 			);
 			path = controllino;
 			sourceTree = "<group>";
@@ -128,6 +127,39 @@
 				061AE56225E6485700A67EBD /* Info.plist */,
 			);
 			path = controllinoUITests;
+			sourceTree = "<group>";
+		};
+		061AE57125E6496D00A67EBD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		061AE57225E6497400A67EBD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				061AE57825E64A7900A67EBD /* LoginView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		061AE57325E6497800A67EBD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		061AE57425E6497F00A67EBD /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				061AE54325E6485200A67EBD /* controllinoApp.swift */,
+				061AE54725E6485700A67EBD /* Assets.xcassets */,
+				061AE54C25E6485700A67EBD /* Info.plist */,
+				061AE54925E6485700A67EBD /* Preview Content */,
+			);
+			path = Others;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				061AE54625E6485200A67EBD /* ContentView.swift in Sources */,
+				061AE57925E64A7900A67EBD /* LoginView.swift in Sources */,
 				061AE54425E6485200A67EBD /* controllinoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,10 +450,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"controllino/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"controllino/Others/Preview Content\"";
 				DEVELOPMENT_TEAM = 6MAUVS763K;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = controllino/Info.plist;
+				INFOPLIST_FILE = controllino/Others/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -440,10 +472,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"controllino/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"controllino/Others/Preview Content\"";
 				DEVELOPMENT_TEAM = 6MAUVS763K;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = controllino/Info.plist;
+				INFOPLIST_FILE = controllino/Others/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
